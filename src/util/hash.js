@@ -1,6 +1,6 @@
 import bcrypt from 'bcryptjs'
 
-import conf from '../conf/config'
+import {conf} from '../conf/config'
 
 var generate = function(password){
   var salt = bcrypt.genSaltSync(conf.saltLenght);

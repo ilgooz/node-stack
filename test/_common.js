@@ -2,11 +2,11 @@ import 'should';
 import request from 'supertest';
 import mongoose from 'mongoose';
 
-import conf from '../src/conf/config'
+import {loadEnv} from '../src/conf/config'
 import runMongo from '../src/conf/mongo';
 import {app} from '../src/app';
 
-conf.env = "test"
+loadEnv("test");
 runMongo();
 
 // drop database first

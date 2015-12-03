@@ -1,5 +1,5 @@
 import app from './conf/express';
-import conf from './conf/config';
+import {conf} from './conf/config';
 import runMongo from './conf/mongo';
 import registerEndpoints from './endpoints';
 
